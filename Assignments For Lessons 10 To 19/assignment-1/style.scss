@@ -1,0 +1,41 @@
+@import "./sass/layout/global-rules";
+
+@mixin arrow($prop,  $value, $prop2, $value2) {
+    content: "";
+    position: absolute;
+    border: 20px solid transparent;
+    transform: translateX(-50%);
+    border-bottom-color: red;
+    #{$prop}: $value;
+    #{$prop2}: $value2;
+}
+/* first output */
+.element {
+    &:before {
+        @include arrow(top, 50px, left, 50%);
+    }
+}
+
+/* second output */
+.element {
+    &:before {
+        @include arrow(right, 40px, top, 50%);
+    }
+}
+
+/* third output */
+.element {
+    &:before {
+        @include arrow(bottom, 40px, left, 50%);
+    }
+}
+
+/* fourth output */
+.element {
+    &:before {
+        @include arrow(left, 40px, bottom, 50%);
+    }
+}
+
+
+

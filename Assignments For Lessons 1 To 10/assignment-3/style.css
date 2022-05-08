@@ -1,0 +1,26 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "tahoma";
+}
+
+/* first method*/
+.class > .child {
+  padding: 10px;
+}
+
+/* second method*/
+.class > .child {
+  padding: 10px;
+}
+
+/* third method*/
+.class > .child {
+  padding: 10px;
+}
+/*# sourceMappingURL=style.css.map */

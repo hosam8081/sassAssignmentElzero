@@ -1,0 +1,16 @@
+@import "./sass/layout/global-rules";
+
+
+/* first method */
+.class {
+    font: {
+        weight: bold;
+        size: 20px
+    }
+}
+
+/* second method */
+.class {
+    font-weight: bold;
+    font-size: 20px;
+}

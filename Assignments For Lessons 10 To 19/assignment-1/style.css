@@ -1,0 +1,59 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "tahoma";
+}
+
+/* first output */
+.element:before {
+  content: "";
+  position: absolute;
+  border: 20px solid transparent;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-bottom-color: red;
+  top: 50px;
+  left: 50%;
+}
+
+/* second output */
+.element:before {
+  content: "";
+  position: absolute;
+  border: 20px solid transparent;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-bottom-color: red;
+  right: 40px;
+  top: 50%;
+}
+
+/* third output */
+.element:before {
+  content: "";
+  position: absolute;
+  border: 20px solid transparent;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-bottom-color: red;
+  bottom: 40px;
+  left: 50%;
+}
+
+/* fourth output */
+.element:before {
+  content: "";
+  position: absolute;
+  border: 20px solid transparent;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-bottom-color: red;
+  left: 40px;
+  bottom: 50%;
+}
+/*# sourceMappingURL=style.css.map */

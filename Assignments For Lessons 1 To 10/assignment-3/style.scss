@@ -1,0 +1,24 @@
+@import "./sass/layout/global-rules";
+
+/* first method*/
+.class {
+    > .child {
+        padding:10px
+    }
+}
+
+/* second method*/
+.class > {
+    .child {
+        padding:10px
+    }
+}
+
+/* third method*/
+.class {
+    > {
+        .child {
+            padding:10px
+        }
+    }
+}

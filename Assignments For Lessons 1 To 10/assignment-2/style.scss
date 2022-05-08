@@ -1,0 +1,20 @@
+@import "./sass/layout/global-rules";
+$padding:15px;
+$font:18px;
+.content {
+    > .box {
+        padding: $padding;
+        > .title {
+            font-size: $font;
+        }
+    }
+    .cat {
+        padding: 15px;
+    }
+    &.premium::before {
+        content: "Premium Box";
+    }
+    &.premium:hover {
+        background-color: #eee;
+    }
+}

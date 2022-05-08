@@ -1,0 +1,15 @@
+@import "./sass/layout/global-rules";
+
+/* for grid */
+@for $i from 1 through 16 {
+    .col-#{$i} {
+        width:percentage($i / 16);
+    }
+}
+
+/* margin */
+@for $i from 1 through 5 {
+    .m-#{$i} {
+        margin: #{$i / 2 + "rem"}
+    }
+}

@@ -1,0 +1,28 @@
+@import "./sass/layout/global-rules";
+
+$main: "school";
+$child: "box";
+$language: "en"; // English
+$gap: 20px;
+
+// Output
+.school {
+    padding: $gap;
+    @if $language == "en" {
+        direction: ltr;
+    } @else {
+        direction: rtl;
+    }
+    margin-left: $gap;
+}
+.school {
+    & &-#{$child} {
+        padding: $gap - 10;
+    }
+}
+
+.school {
+    :hover &-#{$child} {
+        background-color: #eee;
+    }
+}

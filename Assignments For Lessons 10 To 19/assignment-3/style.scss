@@ -1,0 +1,16 @@
+@import "./sass/layout/global-rules";
+
+$names: "books" 20px red 18, "games" 30px green 18, "dvds" 20px blue;
+
+@each $class, $unit, $color, $font in $names {
+    .#{$class} {
+        padding: $unit;
+        border-bottom: 2px solid red;
+        color: $color;
+        @if $font {
+            font-size: $font;
+        } @else {
+            font-size: 16px;
+        }
+    }
+}

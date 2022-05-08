@@ -1,0 +1,22 @@
+@import "./sass/layout/global-rules";
+.parent {
+    & + .sibling {
+        margin: auto {
+            top: 10px;
+        }
+        & ~ .last {
+            padding: 10px;
+        }
+    }
+}
+
+// target sibling for parent
+.parent + .sibling {
+    margin:auto;
+    margin-top:10px;
+} 
+
+// target last class that sibling for parent 
+.parent + .sibling ~ .last {
+    padding:10px
+} 

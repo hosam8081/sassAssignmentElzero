@@ -1,0 +1,31 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "tahoma";
+}
+
+.content > .box {
+  padding: 15px;
+}
+
+.content > .box > .title {
+  font-size: 18px;
+}
+
+.content .cat {
+  padding: 15px;
+}
+
+.content.premium::before {
+  content: "Premium Box";
+}
+
+.content.premium:hover {
+  background-color: #eee;
+}
+/*# sourceMappingURL=style.css.map */
